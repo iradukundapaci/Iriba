@@ -1,0 +1,160 @@
+.bar1,
+.bar2,
+.bar3 {
+  height: 10px;
+  flex: 1;
+  position: relative;
+  background-color: var(--color-sienna-100);
+  min-width: 360px;
+  max-width: 100%;
+}
+.bar2,
+.bar3 {
+  background-color: var(--color-black);
+}
+.bar3 {
+  background-color: var(--color-sienna-100);
+}
+.topBar {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  row-gap: 20px;
+}
+.nvhs {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.nvhsWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-4xs);
+}
+.cNav1,
+.cNav2,
+.cNav3 {
+  height: 5px;
+  width: 110px;
+  position: relative;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-sienna-100);
+}
+.cNav1,
+.cNav2 {
+  height: 100%;
+  width: 44px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 54px;
+  bottom: 0;
+  background-color: var(--color-black);
+}
+.cNav1 {
+  right: 0;
+}
+.courselNav {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  gap: var(--gap-3xs);
+}
+.courselNav,
+.frameParent,
+.innerContent {
+  display: flex;
+  align-items: flex-start;
+}
+.frameParent {
+  width: 218px;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+.innerContent {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+}
+.contentWrapper {
+  width: 1200px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+  max-width: 100%;
+}
+.body,
+.contentWrapper,
+.mainContent,
+.viewProject {
+  display: flex;
+  align-items: flex-start;
+}
+.body {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-41xl);
+  color: var(--color-sienna-100);
+  font-family: var(--font-space-grotesk);
+}
+.mainContent,
+.viewProject {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.mainContent {
+  align-self: stretch;
+  padding: 0 0 var(--padding-21xl);
+  box-sizing: border-box;
+  gap: 43px;
+  max-width: 100%;
+}
+.viewProject {
+  width: 100%;
+  position: relative;
+  background-color: var(--white);
+  overflow: hidden;
+  gap: 3px;
+  mix-blend-mode: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1000px) {
+  .nvhs {
+    font-size: var(--font-size-29xl);
+  }
+}
+@media screen and (max-width: 725px) {
+  .contentWrapper {
+    gap: var(--gap-xl);
+  }
+  .mainContent {
+    gap: 21px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .bar1,
+  .bar2,
+  .bar3 {
+    min-width: 100%;
+  }
+  .nvhs {
+    font-size: var(--font-size-17xl);
+  }
+}

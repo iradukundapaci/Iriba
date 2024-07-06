@@ -1,0 +1,78 @@
+.postChild,
+.userIcon1 {
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.postChild {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  height: 293px;
+  object-fit: cover;
+}
+.userIcon1 {
+  width: 24px;
+  height: 24px;
+}
+.christellaI,
+.userIcon1 {
+  position: relative;
+}
+.poster {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.vectorIcon {
+  width: 18px;
+  height: 20px;
+}
+.feb42023,
+.vectorIcon {
+  position: relative;
+}
+.postDate,
+.postInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.postInfo {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: var(--gap-xl);
+}
+.addressingThePhysical {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+}
+.post {
+  width: 326.7px;
+  height: 411px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-dimgray-200);
+  font-family: var(--font-space-grotesk);
+}
+@media screen and (max-width: 960px) {
+  .post {
+    margin: 20;
+  }
+}
+@media screen and (max-width: 450px) {
+  .post {
+    margin-bottom: 40;
+  }
+}

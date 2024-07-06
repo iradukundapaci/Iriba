@@ -1,0 +1,111 @@
+.bar1 {
+  height: 10px;
+  flex: 1;
+  position: relative;
+  background-color: var(--color-sienna-100);
+  min-width: 328px;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.bar2,
+.bar3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-black);
+  width: 504.7px;
+  height: 10px;
+}
+.bar3 {
+  left: 504.6px;
+  background-color: var(--color-sienna-100);
+  z-index: 1;
+}
+.barRight {
+  height: 10px;
+  width: 1009.3px;
+  position: relative;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.topBar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 20px;
+}
+.map,
+.map1Icon,
+.mapWrapper,
+.topBar {
+  align-self: stretch;
+  max-width: 100%;
+}
+.map1Icon {
+  position: relative;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  display: none;
+}
+.map,
+.mapWrapper {
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.map {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 var(--padding-mini);
+  background-image: url(/public/map-1@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.mapWrapper {
+  height: 398px;
+  flex-direction: row;
+  padding: 0 0 var(--padding-21xl);
+}
+.contactUs,
+.mapWrapper,
+.teamContentWrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.teamContentWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl) var(--padding-21xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.contactUs {
+  width: 100%;
+  position: relative;
+  background-color: var(--white);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  mix-blend-mode: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1000px) {
+  .teamContentWrapper {
+    padding-bottom: var(--padding-7xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .teamContentWrapper {
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

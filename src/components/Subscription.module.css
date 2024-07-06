@@ -1,0 +1,309 @@
+.frameIcon {
+  width: 95.7px;
+  position: relative;
+  height: 16.7px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 125.2px;
+  height: 16.7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameIcon1 {
+  width: 95.7px;
+  position: relative;
+  height: 16.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon1 {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame1 {
+  position: absolute;
+  top: 0;
+  left: 144.7px;
+  width: 125.2px;
+  height: 16.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameIcon2 {
+  width: 95.7px;
+  position: relative;
+  height: 16.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon2 {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame2 {
+  position: absolute;
+  top: 0;
+  left: 292.4px;
+  width: 125.2px;
+  height: 16.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameIcon3 {
+  width: 95.7px;
+  position: relative;
+  height: 16.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon3 {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame3 {
+  position: absolute;
+  top: 0;
+  left: 437.1px;
+  width: 125.2px;
+  height: 16.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameIcon4 {
+  width: 95.7px;
+  position: relative;
+  height: 16.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon4 {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame4 {
+  position: absolute;
+  top: 0;
+  left: 581.4px;
+  width: 125.2px;
+  height: 16.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameIcon5 {
+  width: 95.7px;
+  position: relative;
+  height: 16.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon5 {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame5 {
+  position: absolute;
+  top: 0;
+  left: 726.4px;
+  width: 125.2px;
+  height: 16.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameIcon6 {
+  width: 95.7px;
+  position: relative;
+  height: 16.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon6 {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame6 {
+  position: absolute;
+  top: 0;
+  left: 874.4px;
+  width: 125.2px;
+  height: 16.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameIcon7 {
+  width: 95.7px;
+  position: relative;
+  height: 16.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon7 {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame7 {
+  position: absolute;
+  top: 0;
+  left: 1019.4px;
+  width: 125.2px;
+  height: 16.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameIcon8 {
+  width: 95.7px;
+  position: relative;
+  height: 16.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon8 {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame8 {
+  position: absolute;
+  top: 0;
+  left: 1168.4px;
+  width: 125.2px;
+  height: 16.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameIcon9 {
+  width: 95.7px;
+  position: relative;
+  height: 16.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon9 {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame9 {
+  position: absolute;
+  top: 0;
+  left: 1312.4px;
+  width: 125.2px;
+  height: 16.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.linePattern3 {
+  height: 17.1px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.linePattern3,
+.reachOut {
+  align-self: stretch;
+  position: relative;
+}
+.allUpdatesOn {
+  position: relative;
+  font-size: var(--font-size-sm);
+}
+.email {
+  border: 0;
+  background-color: transparent;
+  font-family: var(--font-space-grotesk);
+  font-size: var(--font-size-3xs);
+  color: var(--color-sienna-100);
+}
+.email,
+.subscriptionBtn {
+  width: 270px;
+}
+.emailSubcription,
+.subscription {
+  align-self: stretch;
+  background-color: var(--color-gainsboro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.emailSubcription {
+  justify-content: center;
+  gap: var(--gap-3xs);
+}
+.subscription {
+  height: 315px;
+  justify-content: space-between;
+  padding: var(--padding-mini) var(--padding-21xl) var(--padding-30xl);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-31xl);
+  color: var(--color-black);
+  font-family: var(--font-space-grotesk);
+}
+@media screen and (max-width: 450px) {
+  .frame2,
+  .frame3,
+  .frame4,
+  .frame5,
+  .frame6,
+  .frame7,
+  .frame8,
+  .frame9 {
+    display: none;
+  }
+  .reachOut {
+    font-size: var(--font-size-21xl);
+  }
+  .allUpdatesOn {
+    font-size: var(--font-size-base);
+  }
+  .subscription {
+    align-items: center;
+    justify-content: center;
+  }
+}

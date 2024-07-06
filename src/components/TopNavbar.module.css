@@ -1,0 +1,148 @@
+.vectorIcon {
+  width: 180px;
+  position: relative;
+  height: 55.9px;
+}
+.vectorWrapper {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.home {
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  color: inherit;
+}
+.aboutUs,
+.portfolio {
+  cursor: pointer;
+}
+.aboutUs,
+.blog,
+.portfolio {
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  color: inherit;
+}
+.blackMenu1,
+.contactUs {
+  cursor: pointer;
+  position: relative;
+}
+.contactUs {
+  text-decoration: none;
+  font-weight: 500;
+  color: inherit;
+}
+.blackMenu1 {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  height: 22px;
+  width: 22px;
+  background-image: url(/public/blackmenu-12@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: none;
+}
+.navBar {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-mid) 0;
+}
+.stayConnected {
+  position: relative;
+}
+.vectorIcon1,
+.vectorIcon2,
+.vectorIcon3,
+.vectorIcon4,
+.youtubeIcon1 {
+  width: 20px;
+  position: relative;
+  height: 20px;
+}
+.youtubeIcon1 {
+  object-fit: cover;
+}
+.socialMediaIconsHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.socialHeader,
+.topNavbar {
+  align-self: stretch;
+  display: flex;
+}
+.socialHeader {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: var(--gap-8xs);
+}
+.topNavbar {
+  border-bottom: 5px solid var(--color-black);
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-21xl);
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-black);
+  font-family: var(--font-space-grotesk);
+}
+@media screen and (max-width: 1200px) {
+  .blackMenu1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 960px) {
+  .aboutUs,
+  .blog,
+  .contactUs,
+  .navBar,
+  .portfolio,
+  .vectorWrapper {
+    display: flex;
+  }
+  .socialHeader {
+    display: none;
+  }
+}
+@media screen and (max-width: 820px) {
+  .aboutUs,
+  .blog,
+  .contactUs,
+  .home,
+  .portfolio {
+    display: none;
+  }
+  .contactUs {
+    text-align: left;
+  }
+  .blackMenu1,
+  .navBar {
+    display: flex;
+  }
+  .navBar {
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .socialHeader {
+    display: none;
+  }
+}

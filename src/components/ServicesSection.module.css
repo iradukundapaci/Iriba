@@ -1,0 +1,510 @@
+.ourServices {
+  align-self: stretch;
+  position: relative;
+}
+.div {
+  width: 86px;
+  position: relative;
+  display: inline-block;
+  height: 80px;
+  flex-shrink: 0;
+}
+.brandPromotion {
+  align-self: stretch;
+  position: relative;
+}
+.whenCustomersRegularly {
+  width: 284px;
+  position: relative;
+  font-size: var(--font-size-sm);
+  display: inline-block;
+  color: var(--white);
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--font-size-11xl);
+  color: var(--color-sienna-100);
+}
+.serviceCard {
+  height: 253px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-4xl);
+}
+.div1 {
+  width: 100px;
+  position: relative;
+  display: inline-block;
+  height: 84px;
+  flex-shrink: 0;
+}
+.communication {
+  align-self: stretch;
+  position: relative;
+}
+.clearMessagingAbout {
+  width: 272px;
+  position: relative;
+  font-size: var(--font-size-sm);
+  display: inline-block;
+  color: var(--white);
+}
+.service1,
+.serviceCard1 {
+  display: flex;
+  justify-content: flex-start;
+}
+.service1 {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  font-size: var(--font-size-11xl);
+  color: var(--color-sienna-100);
+}
+.serviceCard1 {
+  height: 138px;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-4xs);
+}
+.div2 {
+  width: 100px;
+  position: relative;
+  display: inline-block;
+  height: 84px;
+  flex-shrink: 0;
+}
+.visibility {
+  align-self: stretch;
+  position: relative;
+}
+.digitalPlatformsEnable {
+  width: 269px;
+  position: relative;
+  font-size: var(--font-size-sm);
+  display: inline-block;
+  color: var(--white);
+}
+.service2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--font-size-11xl);
+  color: var(--color-sienna-100);
+}
+.serviceCard2,
+.serviceCards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.serviceCard2 {
+  justify-content: flex-start;
+  gap: var(--gap-smi);
+}
+.serviceCards {
+  align-self: stretch;
+  justify-content: space-between;
+  padding: var(--padding-21xl) 0;
+  margin-bottom: 40;
+  font-size: var(--font-size-61xl);
+}
+.frameIcon {
+  width: 95.7px;
+  position: relative;
+  height: 16.7px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 125.2px;
+  height: 16.7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameIcon1 {
+  width: 95.7px;
+  position: relative;
+  height: 16.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon1 {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame1 {
+  position: absolute;
+  top: 0;
+  left: 144.7px;
+  width: 125.2px;
+  height: 16.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameIcon2 {
+  width: 95.7px;
+  position: relative;
+  height: 16.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon2 {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame2 {
+  position: absolute;
+  top: 0;
+  left: 292.4px;
+  width: 125.2px;
+  height: 16.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameIcon3 {
+  width: 95.7px;
+  position: relative;
+  height: 16.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon3 {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame3 {
+  position: absolute;
+  top: 0;
+  left: 437.1px;
+  width: 125.2px;
+  height: 16.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameIcon4 {
+  width: 95.7px;
+  position: relative;
+  height: 16.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon4 {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame4 {
+  position: absolute;
+  top: 0;
+  left: 581.4px;
+  width: 125.2px;
+  height: 16.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameIcon5 {
+  width: 95.7px;
+  position: relative;
+  height: 16.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon5 {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame5 {
+  position: absolute;
+  top: 0;
+  left: 726.4px;
+  width: 125.2px;
+  height: 16.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameIcon6 {
+  width: 95.7px;
+  position: relative;
+  height: 16.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon6 {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame6 {
+  position: absolute;
+  top: 0;
+  left: 874.4px;
+  width: 125.2px;
+  height: 16.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameIcon7 {
+  width: 95.7px;
+  position: relative;
+  height: 16.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon7 {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame7 {
+  position: absolute;
+  top: 0;
+  left: 1019.4px;
+  width: 125.2px;
+  height: 16.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameIcon8 {
+  width: 95.7px;
+  position: relative;
+  height: 16.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon8 {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame8 {
+  position: absolute;
+  top: 0;
+  left: 1168.4px;
+  width: 125.2px;
+  height: 16.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameIcon9 {
+  width: 95.7px;
+  position: relative;
+  height: 16.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupIcon9 {
+  width: 17.4px;
+  position: relative;
+  height: 16.5px;
+}
+.frame9 {
+  position: absolute;
+  top: 0;
+  left: 1312.4px;
+  width: 125.2px;
+  height: 16.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.linePattern2 {
+  align-self: stretch;
+  position: relative;
+  height: 17.1px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.servicesSection {
+  align-self: stretch;
+  background-color: var(--color-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-21xl);
+  gap: var(--gap-31xl);
+  text-align: center;
+  font-size: var(--font-size-31xl);
+  color: var(--white);
+  font-family: var(--font-space-grotesk);
+}
+@media screen and (max-width: 1200px) {
+  .whenCustomersRegularly {
+    font-size: var(--font-size-xs);
+  }
+  .serviceCard {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  .clearMessagingAbout {
+    font-size: var(--font-size-xs);
+  }
+  .serviceCard1 {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  .digitalPlatformsEnable {
+    font-size: var(--font-size-xs);
+  }
+  .serviceCard2 {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  .serviceCards {
+    flex-direction: row;
+    padding-left: var(--padding-3xs);
+    padding-right: var(--padding-3xs);
+    box-sizing: border-box;
+  }
+  .servicesSection {
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1178px) {
+  .div {
+    display: none;
+  }
+  .serviceCard {
+    flex-direction: column;
+    gap: var(--gap-4xl);
+  }
+  .div1 {
+    display: none;
+  }
+  .serviceCard1 {
+    flex-direction: column;
+    gap: var(--gap-4xs);
+  }
+  .div2 {
+    display: none;
+  }
+  .serviceCard2 {
+    flex-direction: column;
+    gap: var(--gap-smi);
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 960px) {
+  .div {
+    display: flex;
+  }
+  .service {
+    flex-direction: column;
+  }
+  .serviceCard {
+    flex-direction: row;
+    margin-bottom: 20;
+  }
+  .div1 {
+    display: flex;
+  }
+  .serviceCard1 {
+    flex-direction: row;
+    margin-bottom: 20;
+  }
+  .div2 {
+    display: flex;
+  }
+  .serviceCard2 {
+    flex-direction: row;
+  }
+  .serviceCards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .ourServices {
+    font-size: var(--font-size-21xl);
+  }
+  .serviceCard {
+    flex-direction: row;
+    gap: var(--gap-4xl);
+  }
+  .serviceCards {
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--gap-0);
+  }
+  .frame {
+    display: flex;
+  }
+  .frame2,
+  .frame3,
+  .frame4,
+  .frame5,
+  .frame6,
+  .frame7 {
+    display: none;
+  }
+  .frame8 {
+    width: 125px;
+  }
+  .frame9 {
+    display: none;
+  }
+  .servicesSection {
+    gap: var(--gap-6xl);
+    align-items: center;
+    justify-content: center;
+  }
+}

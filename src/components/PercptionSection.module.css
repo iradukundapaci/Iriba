@@ -1,0 +1,22 @@
+.yourGatewayTo {
+  width: 402px;
+  position: relative;
+  display: inline-block;
+}
+.percptionSection {
+  align-self: stretch;
+  height: 595px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+  background-image: url(/public/percptionsection@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  font-size: var(--font-size-11xl);
+  color: var(--white);
+  font-family: var(--font-space-grotesk);
+}

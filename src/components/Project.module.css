@@ -1,0 +1,57 @@
+.projectImagesIcon {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.nuVisionHighSchool {
+  position: relative;
+}
+.brilliantlyRepresentedTheir,
+.internationalSchoolDistincti,
+.usingOurPublishing,
+.weCreatedA,
+.whileRepresentingThe {
+  margin: 0;
+}
+.weCreatedAContainer {
+  position: relative;
+  font-size: var(--font-size-xs);
+  color: var(--white);
+  text-align: center;
+}
+.project,
+.projectDetail {
+  display: flex;
+  flex-direction: column;
+}
+.projectDetail {
+  align-self: stretch;
+  background-color: var(--color-black);
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xl) var(--padding-xl);
+  gap: var(--gap-lgi);
+}
+.project {
+  height: 572px;
+  width: 572px;
+  border: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 543px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-sienna-100);
+  font-family: var(--font-space-grotesk);
+}
+@media screen and (max-width: 750px) {
+  .project {
+    min-width: 100%;
+  }
+}

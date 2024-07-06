@@ -1,0 +1,35 @@
+.bar1,
+.bar2,
+.bar3 {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  background-color: var(--color-sienna-100);
+}
+.bar2,
+.bar3 {
+  background-color: var(--color-black);
+}
+.bar3 {
+  background-color: var(--color-sienna-100);
+}
+.aboutUs,
+.topBar {
+  display: flex;
+  justify-content: flex-start;
+}
+.topBar {
+  align-self: stretch;
+  height: 10px;
+  flex-direction: row;
+  align-items: center;
+}
+.aboutUs {
+  width: 100%;
+  position: relative;
+  background-color: var(--white);
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-start;
+  mix-blend-mode: normal;
+}

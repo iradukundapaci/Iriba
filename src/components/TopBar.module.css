@@ -1,0 +1,29 @@
+.bar1,
+.bar2 {
+  flex: 1;
+  position: relative;
+}
+.bar1 {
+  align-self: stretch;
+  background-color: var(--color-sienna-100);
+}
+.bar2 {
+  background-color: var(--color-black);
+}
+.bar2,
+.bar3,
+.topBar {
+  align-self: stretch;
+}
+.bar3 {
+  flex: 1;
+  position: relative;
+  background-color: var(--color-sienna-100);
+}
+.topBar {
+  height: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}

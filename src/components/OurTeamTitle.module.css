@@ -1,0 +1,70 @@
+.contactUs {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.teamTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xs);
+}
+.cNav1,
+.cNav2,
+.cNav3 {
+  height: 5px;
+  width: 224px;
+  position: relative;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-sienna-100);
+}
+.cNav1,
+.cNav2 {
+  height: 100%;
+  width: 46px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 51px;
+  bottom: 0;
+  background-color: var(--color-black);
+}
+.cNav1 {
+  right: 0;
+}
+.courselNav,
+.ourTeamTitle {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.courselNav {
+  align-self: stretch;
+  flex-direction: row;
+  position: relative;
+  gap: var(--gap-8xs);
+}
+.ourTeamTitle {
+  width: 326px;
+  flex-direction: column;
+  gap: var(--gap-4xs);
+  flex-shrink: 0;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-41xl);
+  color: var(--color-sienna-100);
+  font-family: var(--font-space-grotesk);
+}
+@media screen and (max-width: 1000px) {
+  .contactUs {
+    font-size: var(--font-size-29xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .contactUs {
+    font-size: var(--font-size-17xl);
+  }
+}

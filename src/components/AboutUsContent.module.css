@@ -1,0 +1,188 @@
+.ourMission,
+.truthInEvery {
+  position: relative;
+  line-height: 50px;
+}
+.ourMission {
+  align-self: stretch;
+}
+.truthInEvery {
+  flex: 1;
+  font-weight: 300;
+}
+.truthInEveryPixelWrapper {
+  align-self: stretch;
+  border-bottom: 1px solid var(--primary-color-pink);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: var(--font-size-xl);
+  color: var(--color-gray);
+}
+.calPractices,
+.ingSolutionsWith,
+.onRealResults,
+.weAreCommitted {
+  margin: 0;
+}
+.weAreCommittedContainer1 {
+  width: 100%;
+}
+.weAreCommittedContainer {
+  width: 441px;
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 28px;
+  font-weight: 300;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+}
+.ourMissionParent {
+  align-self: stretch;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-11xl);
+}
+.target1Icon {
+  width: 265px;
+  position: relative;
+  height: 254px;
+  object-fit: cover;
+}
+.frameParent {
+  align-self: stretch;
+  background-color: var(--white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--padding-mini);
+}
+.binoculars1Icon {
+  width: 265px;
+  position: relative;
+  height: 254px;
+  object-fit: cover;
+}
+.binoculars1Parent {
+  align-self: stretch;
+  background-color: var(--white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--padding-mini);
+}
+.ourValues {
+  align-self: stretch;
+  position: relative;
+  line-height: 50px;
+}
+.innovationThatResonates {
+  flex: 1;
+  position: relative;
+  line-height: 50px;
+}
+.innovationThatResonatesAndWrapper {
+  align-self: stretch;
+  border-bottom: 1px solid var(--primary-color-pink);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: var(--font-size-xl);
+  color: var(--color-gray);
+}
+.ourVisionIs {
+  width: 361px;
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 28px;
+  font-weight: 300;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+}
+.ourValuesParent {
+  flex: 1;
+  height: 254px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-11xl);
+  box-sizing: border-box;
+}
+.values1Icon {
+  width: 265px;
+  position: relative;
+  height: 254px;
+  object-fit: cover;
+}
+.aboutUsContent,
+.frameGroup {
+  align-self: stretch;
+  background-color: var(--white);
+  display: flex;
+}
+.frameGroup {
+  overflow: hidden;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--padding-mini);
+}
+.aboutUsContent {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-21xl) 0;
+  gap: var(--gap-21xl);
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-sienna-100);
+  font-family: var(--font-space-grotesk);
+}
+@media screen and (max-width: 820px) {
+  .ourMissionParent {
+    width: auto;
+    align-self: stretch;
+    flex: unset;
+  }
+  .target1Icon {
+    flex: 1;
+  }
+  .binoculars1Parent,
+  .frameParent {
+    flex-direction: column-reverse;
+    gap: var(--gap-0);
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .binoculars1Parent {
+    flex-direction: column;
+  }
+  .ourValuesParent {
+    width: auto;
+    align-self: stretch;
+    flex: unset;
+  }
+  .frameGroup {
+    flex-direction: column-reverse;
+    gap: var(--gap-0);
+    align-items: flex-start;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,19 @@
+.teamContent {
+  width: 1224px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+  max-width: 100%;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--font-size-41xl);
+  color: var(--color-sienna-100);
+  font-family: var(--font-space-grotesk);
+}
+@media screen and (max-width: 725px) {
+  .teamContent {
+    gap: var(--gap-xl);
+  }
+}

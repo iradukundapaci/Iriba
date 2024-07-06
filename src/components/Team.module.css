@@ -1,0 +1,38 @@
+.background31Icon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 316px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.founderLead,
+.munezeroPeter {
+  position: relative;
+}
+.founderLead {
+  font-size: var(--font-size-smi);
+  color: var(--color-sienna-100);
+}
+.background31Parent,
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.name {
+  align-self: stretch;
+  background-color: var(--color-black);
+  justify-content: center;
+  padding: var(--padding-3xs) 0 var(--padding-3xs) var(--padding-3xs);
+}
+.background31Parent {
+  width: 255px;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--white);
+  font-family: var(--font-space-grotesk);
+}
