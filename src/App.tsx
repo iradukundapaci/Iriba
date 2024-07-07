@@ -7,7 +7,6 @@ import {
 } from 'react-router-dom';
 import ContactUs from './pages/ContactUs';
 import IribaHome from './pages/IribaHome';
-import Youtube from './pages/Youtube';
 import Portfolio from './pages/Portfolio';
 import ViewProject from './pages/ViewProject';
 import AboutUs from './pages/AboutUs';
