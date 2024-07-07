@@ -1,16 +1,16 @@
-import { FunctionComponent } from "react";
-import Team from "./Team";
-import styles from "./OurTeamSection.module.css";
+import { FunctionComponent } from 'react';
+import Team from './Team';
+import styles from './OurTeamSection.module.css';
 
 export type OurTeamSectionType = {
   className?: string;
 };
 
 const OurTeamSection: FunctionComponent<OurTeamSectionType> = ({
-  className = "",
+  className = '',
 }) => {
   return (
-    <div className={[styles.ourTeamSection, className].join(" ")}>
+    <div className={[styles.ourTeamSection, className].join(' ')}>
       <div className={styles.ourTeamTitle}>
         <b className={styles.ourCircle}>Our Circle</b>
         <div className={styles.courselNav}>
@@ -50,7 +50,7 @@ const OurTeamSection: FunctionComponent<OurTeamSectionType> = ({
           <img
             className={styles.background31Icon1}
             alt=""
-            src="/background3-12@2x.png"
+            src="/background3-111@2x.png"
           />
           <div className={styles.name1}>
             <b className={styles.gasanaEddy}>Gasana Eddy</b>
@@ -61,7 +61,7 @@ const OurTeamSection: FunctionComponent<OurTeamSectionType> = ({
           <img
             className={styles.background31Icon2}
             alt=""
-            src="/background3-13@2x.png"
+            src="/background3-12@2x.png"
           />
           <div className={styles.name2}>
             <b className={styles.kalisaHonore}>Kalisa Honore</b>
@@ -72,7 +72,7 @@ const OurTeamSection: FunctionComponent<OurTeamSectionType> = ({
           <img
             className={styles.background31Icon3}
             alt=""
-            src="/background3-14@2x.png"
+            src="/background3-13@2x.png"
           />
           <div className={styles.name3}>
             <b className={styles.elvinMugeni}>Elvin Mugeni</b>
@@ -83,7 +83,7 @@ const OurTeamSection: FunctionComponent<OurTeamSectionType> = ({
           <img
             className={styles.background31Icon4}
             alt=""
-            src="/background3-15@2x.png"
+            src="/background3-14@2x.png"
           />
           <div className={styles.name4}>
             <b className={styles.paulNPalvis}>Paul N. Palvis</b>

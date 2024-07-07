@@ -1,18 +1,15 @@
-import { FunctionComponent } from "react";
-import TopNavbar from "../components/TopNavbar";
-import ContactContent from "../components/ContactContent";
-import Project from "../components/Project";
-import Footer from "../components/Footer";
-import styles from "./Portfolio.module.css";
+import { FunctionComponent } from 'react';
+import TopNavbar from '../components/TopNavbar';
+import ContactContent from '../components/ContactContent';
+import Project from '../components/Project';
+import Footer from '../components/Footer';
+import styles from './Portfolio.module.css';
+import TopBar from '../components/TopBar';
 
 const Portfolio: FunctionComponent = () => {
   return (
     <div className={styles.portfolio}>
-      <div className={styles.topBar}>
-        <div className={styles.bar1} />
-        <div className={styles.bar2} />
-        <div className={styles.bar3} />
-      </div>
+      <TopBar />
       <TopNavbar />
       <main className={styles.contactUsSection}>
         <ContactContent />

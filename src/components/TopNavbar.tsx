@@ -1,35 +1,31 @@
-import { FunctionComponent } from "react";
-import { Link } from "react-router-dom";
-import styles from "./TopNavbar.module.css";
+import { FunctionComponent } from 'react';
+import { Link } from 'react-router-dom';
+import styles from './TopNavbar.module.css';
 
 export type TopNavbarType = {
   className?: string;
-  aboutUsHref: string;
-  portfolioHref: string;
-  contactUsHref: string;
 };
 
-const TopNavbar: FunctionComponent<TopNavbarType> = ({
-  className = "",
-  aboutUsHref,
-  portfolioHref,
-  contactUsHref,
-}) => {
+const TopNavbar: FunctionComponent<TopNavbarType> = ({ className = '' }) => {
   return (
-    <div className={[styles.topNavbar, className].join(" ")}>
+    <div className={[styles.topNavbar, className].join(' ')}>
       <div className={styles.vectorWrapper}>
         <img className={styles.vectorIcon} alt="" src="/vector.svg" />
       </div>
       <div className={styles.navBar}>
-        <a className={styles.home}>Home</a>
-        <Link className={styles.aboutUs} to={aboutUsHref}>
+        <Link className={styles.aboutUs} to="/">
+          Home
+        </Link>
+        <Link className={styles.aboutUs} to="/about-us">
           About us
         </Link>
-        <Link className={styles.portfolio} to={portfolioHref}>
+        <Link className={styles.portfolio} to="/portfolio">
           Portfolio
         </Link>
-        <a className={styles.blog}>Blog</a>
-        <Link className={styles.contactUs} to={contactUsHref}>
+        <a className={styles.blog} href="https://iribacreatives.blogspot.com/">
+          Blog
+        </a>
+        <Link className={styles.contactUs} to="/contact-us">
           Contact us
         </Link>
         <button className={styles.blackMenu1} />

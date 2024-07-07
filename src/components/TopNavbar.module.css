@@ -59,18 +59,20 @@
   align-items: center;
   justify-content: space-between;
   padding: var(--padding-mid) 0;
+  font-size: 18px;
 }
 .stayConnected {
   position: relative;
+  font-size: 18px;
 }
 .vectorIcon1,
 .vectorIcon2,
 .vectorIcon3,
 .vectorIcon4,
 .youtubeIcon1 {
-  width: 20px;
+  width: 30px;
   position: relative;
-  height: 20px;
+  height: 30px;
 }
 .youtubeIcon1 {
   object-fit: cover;
@@ -118,6 +120,7 @@
   .portfolio,
   .vectorWrapper {
     display: flex;
+    font-size: 16px;
   }
   .socialHeader {
     display: none;

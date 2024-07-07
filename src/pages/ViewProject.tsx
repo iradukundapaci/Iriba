@@ -1,17 +1,14 @@
-import { FunctionComponent } from "react";
-import TopNavbar from "../components/TopNavbar";
-import Project1 from "../components/Project1";
-import Footer from "../components/Footer";
-import styles from "./ViewProject.module.css";
+import { FunctionComponent } from 'react';
+import TopNavbar from '../components/TopNavbar';
+import Project1 from '../components/Project1';
+import Footer from '../components/Footer';
+import styles from './ViewProject.module.css';
+import TopBar from '../components/TopBar';
 
 const ViewProject: FunctionComponent = () => {
   return (
     <div className={styles.viewProject}>
-      <div className={styles.topBar}>
-        <div className={styles.bar1} />
-        <div className={styles.bar2} />
-        <div className={styles.bar3} />
-      </div>
+      <TopBar />
       <main className={styles.mainContent}>
         <TopNavbar />
         <section className={styles.body}>

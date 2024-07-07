@@ -55,6 +55,7 @@
   justify-content: flex-start;
   box-sizing: border-box;
 }
+
 .map {
   flex: 1;
   overflow: hidden;
@@ -62,10 +63,6 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0 var(--padding-mini);
-  background-image: url(/public/map-1@2x.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
 }
 .mapWrapper {
   height: 398px;

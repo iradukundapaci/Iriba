@@ -1,14 +1,14 @@
-import { FunctionComponent } from "react";
-import { TextField, InputAdornment, Icon, IconButton } from "@mui/material";
-import styles from "./Footer.module.css";
+import { FunctionComponent } from 'react';
+import { TextField, InputAdornment, Icon, IconButton } from '@mui/material';
+import styles from './Footer.module.css';
 
 export type FooterType = {
   className?: string;
 };
 
-const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
+const Footer: FunctionComponent<FooterType> = ({ className = '' }) => {
   return (
-    <div className={[styles.footer, className].join(" ")}>
+    <div className={[styles.footer, className].join(' ')}>
       <div className={styles.upperFooter}>
         <div className={styles.companyInfo}>
           <div className={styles.vectorWrapper}>
@@ -35,13 +35,13 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
           <b className={styles.stayUpTo}>Stay up to date with our content</b>
           <div className={styles.getStartedBtn}>
             <img className={styles.vectorIcon1} alt="" src="/vector14.svg" />
-            <TextField
+            <input
               className={styles.enterYourEmail}
-              color="primary"
-              label="Enter your email address"
-              required={true}
-              variant="outlined"
-              sx={{ "& .MuiInputBase-root": { height: "15px" } }}
+              type="email"
+              name=""
+              id=""
+              placeholder="Enter your email address"
+              required
             />
           </div>
         </div>

@@ -1,16 +1,16 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 import {
   Routes,
   Route,
   useNavigationType,
   useLocation,
-} from "react-router-dom";
-import ContactUs from "./pages/ContactUs";
-import IribaHome from "./pages/IribaHome";
-import Youtube from "./pages/Youtube";
-import Portfolio from "./pages/Portfolio";
-import ViewProject from "./pages/ViewProject";
-import AboutUs from "./pages/AboutUs";
+} from 'react-router-dom';
+import ContactUs from './pages/ContactUs';
+import IribaHome from './pages/IribaHome';
+import Youtube from './pages/Youtube';
+import Portfolio from './pages/Portfolio';
+import ViewProject from './pages/ViewProject';
+import AboutUs from './pages/AboutUs';
 
 function App() {
   const action = useNavigationType();
@@ -18,39 +18,39 @@ function App() {
   const pathname = location.pathname;
 
   useEffect(() => {
-    if (action !== "POP") {
+    if (action !== 'POP') {
       window.scrollTo(0, 0);
     }
   }, [action, pathname]);
 
   useEffect(() => {
-    let title = "";
-    let metaDescription = "";
+    let title = '';
+    let metaDescription = '';
 
     switch (pathname) {
-      case "/":
-        title = "";
-        metaDescription = "";
+      case '/':
+        title = '';
+        metaDescription = '';
         break;
-      case "/iribahome":
-        title = "";
-        metaDescription = "";
+      case '/youtube-1':
+        title = '';
+        metaDescription = '';
         break;
-      case "/youtube-1":
-        title = "";
-        metaDescription = "";
+      case '/portfolio':
+        title = '';
+        metaDescription = '';
         break;
-      case "/portfolio":
-        title = "";
-        metaDescription = "";
+      case '/viewproject':
+        title = '';
+        metaDescription = '';
         break;
-      case "/viewproject":
-        title = "";
-        metaDescription = "";
+      case '/about-us':
+        title = '';
+        metaDescription = '';
         break;
-      case "/about-us":
-        title = "";
-        metaDescription = "";
+      case '/contact-us':
+        title = '';
+        metaDescription = '';
         break;
     }
 
@@ -60,7 +60,7 @@ function App() {
 
     if (metaDescription) {
       const metaDescriptionTag: HTMLMetaElement | null = document.querySelector(
-        'head > meta[name="description"]'
+        'head > meta[name="description"]',
       );
       if (metaDescriptionTag) {
         metaDescriptionTag.content = metaDescription;
@@ -70,9 +70,8 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<ContactUs />} />
-      <Route path="/iribahome" element={<IribaHome />} />
-      <Route path="/youtube-1" element={<Youtube />} />
+      <Route path="/" element={<IribaHome />} />
+      <Route path="/contact-us" element={<ContactUs />} />
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/viewproject" element={<ViewProject />} />
       <Route path="/about-us" element={<AboutUs />} />

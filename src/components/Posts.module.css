@@ -6,6 +6,8 @@
 }
 .postsBtn {
   width: 163px;
+  border: 2px solid black;
+  color: black;
 }
 .posts,
 .postsHeader,

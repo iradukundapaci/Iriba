@@ -1,24 +1,23 @@
-import { FunctionComponent } from "react";
-import { Button } from "@mui/material";
-import Post from "./Post";
-import styles from "./Posts.module.css";
+import { FunctionComponent } from 'react';
+import { Button } from '@mui/material';
+import Post from './Post';
+import styles from './Posts.module.css';
 
 export type PostsType = {
   className?: string;
 };
 
-const Posts: FunctionComponent<PostsType> = ({ className = "" }) => {
+const Posts: FunctionComponent<PostsType> = ({ className = '' }) => {
   return (
-    <div className={[styles.posts, className].join(" ")}>
+    <div className={[styles.posts, className].join(' ')}>
       <div className={styles.postsHeader}>
         <b className={styles.latestPost}>Latest Post</b>
         <Button
           className={styles.postsBtn}
           disableElevation
-          color="secondary"
           variant="outlined"
           href="/contact-us"
-          sx={{ borderRadius: "0px 0px 0px 0px", width: 163, height: 48 }}
+          sx={{ borderRadius: '0px 0px 0px 0px', width: 163, height: 48 }}
         >
           All posts
         </Button>

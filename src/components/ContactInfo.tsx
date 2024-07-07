@@ -1,15 +1,16 @@
-import { FunctionComponent } from "react";
-import styles from "./ContactInfo.module.css";
+import { FunctionComponent } from 'react';
+import styles from './ContactInfo.module.css';
+import { TextField } from '@mui/material';
 
 export type ContactInfoType = {
   className?: string;
 };
 
 const ContactInfo: FunctionComponent<ContactInfoType> = ({
-  className = "",
+  className = '',
 }) => {
   return (
-    <div className={[styles.contactInfo, className].join(" ")}>
+    <div className={[styles.contactInfo, className].join(' ')}>
       <div className={styles.contactInfoContainer}>
         <div className={styles.contactInfo1}>
           <a className={styles.contactUs}>Contact Us</a>
@@ -99,21 +100,30 @@ const ContactInfo: FunctionComponent<ContactInfoType> = ({
           </div>
         </div>
         <div className={styles.form}>
-          <div className={styles.inputFields}>
-            <div className={styles.textFieldLight}>
-              <div className={styles.name}>Name</div>
-            </div>
-          </div>
-          <div className={styles.inputFields1}>
-            <div className={styles.textFieldLight1}>
-              <div className={styles.email}>Email</div>
-            </div>
-          </div>
-          <div className={styles.inputFields2}>
-            <div className={styles.textFieldLight2}>
-              <div className={styles.subject}>Subject</div>
-            </div>
-          </div>
+          <TextField
+            className={styles.formChild}
+            color="primary"
+            label="Name"
+            required={true}
+            variant="outlined"
+            sx={{ '& .MuiInputBase-root': { height: '50px' } }}
+          />
+          <TextField
+            className={styles.formChild}
+            color="primary"
+            label="Email"
+            required={true}
+            variant="outlined"
+            sx={{ '& .MuiInputBase-root': { height: '50px' } }}
+          />
+          <TextField
+            className={styles.formChild}
+            color="primary"
+            label="Subject"
+            required={true}
+            variant="outlined"
+            sx={{ '& .MuiInputBase-root': { height: '50px' } }}
+          />
           <div className={styles.textAreaLightParent}>
             <textarea
               className={styles.textAreaLight}
