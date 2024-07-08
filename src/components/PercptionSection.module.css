@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   gap: var(--gap-3xs);
-  background-image: url(/public/percptionsection@3x.png);
+  background-image: url(/percptionsection@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
