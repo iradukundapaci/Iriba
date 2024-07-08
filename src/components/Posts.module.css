@@ -52,6 +52,11 @@
     text-align: center;
     flex: 1;
   }
+
+  .postsBtn {
+    display: none;
+  }
+
   .postsHeader {
     padding-left: 0;
     box-sizing: border-box;

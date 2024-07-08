@@ -1,219 +1,111 @@
-.vectorIcon {
-  width: 236px;
-  position: relative;
-  height: 74px;
-}
-.vectorWrapper {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.b,
-.infoiribacreativesrw,
-.kg599Street,
-.remeraKigaliRwanda {
-  position: relative;
-}
-.companyInfo,
-.directions {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.directions {
-  align-self: stretch;
-  justify-content: center;
-  gap: var(--gap-3xs);
-}
-.companyInfo {
-  width: 283.7px;
-  justify-content: flex-start;
-  gap: var(--gap-21xl);
-  text-align: center;
-}
-.aboutUs,
-.blog,
-.contactUs,
-.home,
-.portfolio {
-  align-self: stretch;
-  position: relative;
-}
-.footerNavigation {
-  width: 284px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  gap: var(--gap-3xs);
-}
-.keepInTouch {
-  width: 283.7px;
-  position: relative;
-  display: inline-block;
-}
-.stayUpTo {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--font-size-mini);
-}
-.vectorIcon1 {
-  width: 21.9px;
-  position: relative;
-  height: 16.6px;
-}
-.enterYourEmail {
-  border: 0;
-  background-color: transparent;
-  flex: 1;
-  color: var(--color-darkgray-100);
-  font-weight: bold;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.enterYourEmail:focus {
-  outline: none;
-  box-shadow: none;
-}
-.getStartedBtn {
-  align-self: stretch;
-  background-color: var(--color-sienna-200);
-  border: 1px solid var(--color-darkgray-100);
-  box-sizing: border-box;
-  height: 46px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 var(--padding-3xs);
-  gap: var(--gap-3xs);
-}
-.emailSubcription {
-  width: 283.7px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: var(--gap-3xs);
-  font-size: var(--font-size-11xl);
-}
-.upperFooter {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 var(--padding-81xl);
-}
-.iribaCreativesAll,
-.vectorIcon2 {
-  position: relative;
-}
-.vectorIcon2 {
-  width: 17.5px;
-  height: 17.5px;
-}
-.vectorIcon3,
-.vectorIcon4 {
-  width: 20px;
-  position: relative;
-  height: 20px;
-}
-.vectorIcon4 {
-  width: 7.9px;
-  height: 17px;
-}
-.vectorIcon5,
-.vectorIcon6,
-.vectorIcon7 {
-  width: 20px;
-  position: relative;
-  height: 20px;
-}
-.vectorIcon6,
-.vectorIcon7 {
-  height: 16.3px;
-}
-.vectorIcon7 {
-  height: 15px;
-}
-.footerIcons {
-  width: 233px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.footer,
-.lowerFooter {
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-}
-.lowerFooter {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 var(--padding-81xl);
-}
 .footer {
   background-color: var(--color-darkslategray);
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: var(--padding-21xl);
-  gap: var(--gap-41xl);
-  text-align: left;
-  font-size: var(--font-size-lg);
   color: var(--color-darkgray-100);
   font-family: var(--font-space-grotesk);
+  padding: var(--padding-21xl);
+  text-align: left;
+  font-size: var(--font-size-lg);
+  width: 100%;
 }
-@media screen and (max-width: 960px) {
-  .keepInTouch,
-  .stayUpTo {
-    text-align: left;
-  }
-  .emailSubcription {
-    height: auto;
-    gap: var(--gap-3xs);
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-top: 40;
-  }
-  .upperFooter {
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--gap-0);
-  }
-}
-@media screen and (max-width: 820px) {
-  .footerNavigation {
-    margin-top: 40;
-  }
-}
-@media screen and (max-width: 450px) {
-  .iribaCreativesAll {
-    font-size: var(--font-size-lg);
-    align-self: stretch;
-    width: auto;
-  }
 
+.upperFooter,
+.lowerFooter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 var(--padding-81xl);
+}
+
+.companyInfo,
+.footerNavigation,
+.emailSubscription {
+  flex: 1;
+  margin-bottom: var(--gap-41xl);
+}
+
+.vectorWrapper {
+  margin-bottom: var(--gap-3xs);
+}
+
+.vectorIcon {
+  width: 236px;
+  height: 74px;
+}
+
+.directions p,
+.emailSubscription p,
+.footerNavigation a {
+  margin: var(--gap-3xs) 0;
+}
+
+.footerNavigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footerNavigation a {
+  color: var(--color-darkgray-100);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footerNavigation a:hover {
+  text-decoration: underline;
+}
+
+.emailSubscription .subscriptionForm {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-3xs);
+}
+
+.lowerFooter {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--padding-81xl);
+}
+
+.iribaCreativesAll {
+  margin: 0;
+}
+
+.footerIcons {
+  display: flex;
+  gap: var(--gap-3xs);
+}
+
+.footerIcons a {
+  margin: 0;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 960px) {
   .upperFooter,
   .lowerFooter {
+    flex-direction: column;
+    align-items: flex-start;
     padding: 0 40px;
   }
-  .lowerFooter {
-    align-self: stretch;
-    width: auto;
-    flex-direction: column;
+
+  .footerNavigation,
+  .emailSubscription {
+    margin-bottom: var(--gap-21xl);
   }
+}
+
+@media screen and (max-width: 450px) {
+  .upperFooter,
+  .lowerFooter {
+    padding: 0 20px;
+  }
+
   .footer {
-    padding-left: 0;
-    padding-right: 0;
-    box-sizing: border-box;
+    padding: var(--padding-21xl) 20px;
   }
 }

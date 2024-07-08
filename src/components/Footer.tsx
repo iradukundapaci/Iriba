@@ -8,58 +8,83 @@ export type FooterType = {
 
 const Footer: FunctionComponent<FooterType> = ({ className = '' }) => {
   return (
-    <div className={[styles.footer, className].join(' ')}>
+    <footer className={[styles.footer, className].join(' ')}>
       <div className={styles.upperFooter}>
         <div className={styles.companyInfo}>
           <div className={styles.vectorWrapper}>
-            <img className={styles.vectorIcon} alt="" src="/vector13.svg" />
+            <img
+              className={styles.vectorIcon}
+              alt="Company Logo"
+              src="/vector13.svg"
+            />
           </div>
           <div className={styles.directions}>
-            <b className={styles.remeraKigaliRwanda}>Remera, Kigali-Rwanda</b>
-            <b className={styles.kg599Street}>48 KG 599 Street</b>
-            <b className={styles.b}>(250) 787 884 230</b>
-            <b className={styles.infoiribacreativesrw}>
-              info@iribacreatives.rw
-            </b>
+            <p className={styles.remeraKigaliRwanda}>Remera, Kigali-Rwanda</p>
+            <p className={styles.kg599Street}>48 KG 599 Street</p>
+            <p className={styles.contactInfo}>(250) 787 884 230</p>
+            <p className={styles.contactInfo}>info@iribacreatives.rw</p>
           </div>
         </div>
-        <div className={styles.footerNavigation}>
-          <b className={styles.home}>Home</b>
-          <b className={styles.aboutUs}>About us</b>
-          <b className={styles.portfolio}>Portfolio</b>
-          <b className={styles.blog}>Blog</b>
-          <b className={styles.contactUs}>Contact us</b>
-        </div>
-        <div className={styles.emailSubcription}>
-          <b className={styles.keepInTouch}>KEEP IN TOUCH</b>
-          <b className={styles.stayUpTo}>Stay up to date with our content</b>
-          <div className={styles.getStartedBtn}>
-            <img className={styles.vectorIcon1} alt="" src="/vector14.svg" />
-            <input
-              className={styles.enterYourEmail}
-              type="email"
-              name=""
-              id=""
+        <nav className={styles.footerNavigation}>
+          <a href="/" className={styles.navLink}>
+            Home
+          </a>
+          <a href="/about" className={styles.navLink}>
+            About us
+          </a>
+          <a href="/portfolio" className={styles.navLink}>
+            Portfolio
+          </a>
+          <a href="/blog" className={styles.navLink}>
+            Blog
+          </a>
+          <a href="/contact" className={styles.navLink}>
+            Contact us
+          </a>
+        </nav>
+        <div className={styles.emailSubscription}>
+          <p className={styles.keepInTouch}>KEEP IN TOUCH</p>
+          <p className={styles.stayUpTo}>Stay up to date with our content</p>
+          <div className={styles.subscriptionForm}>
+            <TextField
+              variant="outlined"
               placeholder="Enter your email address"
-              required
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <IconButton edge="end">
+                      <Icon>send</Icon>
+                    </IconButton>
+                  </InputAdornment>
+                ),
+              }}
             />
           </div>
         </div>
       </div>
       <div className={styles.lowerFooter}>
-        <b className={styles.iribaCreativesAll}>
-          @2024 Iriba Creatives, All Rights Reserved
-        </b>
+        <p className={styles.iribaCreativesAll}>
+          &copy; 2024 Iriba Creatives, All Rights Reserved
+        </p>
         <div className={styles.footerIcons}>
-          <img className={styles.vectorIcon2} alt="" src="/vector15.svg" />
-          <img className={styles.vectorIcon3} alt="" src="/vector16.svg" />
-          <img className={styles.vectorIcon4} alt="" src="/vector17.svg" />
-          <img className={styles.vectorIcon5} alt="" src="/vector18.svg" />
-          <img className={styles.vectorIcon6} alt="" src="/vector19.svg" />
-          <img className={styles.vectorIcon7} alt="" src="/vector20.svg" />
+          <a href="#" aria-label="Facebook">
+            <img className={styles.icon} alt="Facebook" src="/vector15.svg" />
+          </a>
+          <a href="#" aria-label="Twitter">
+            <img className={styles.icon} alt="Twitter" src="/vector16.svg" />
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <img className={styles.icon} alt="LinkedIn" src="/vector17.svg" />
+          </a>
+          <a href="#" aria-label="Instagram">
+            <img className={styles.icon} alt="Instagram" src="/vector18.svg" />
+          </a>
+          <a href="#" aria-label="YouTube">
+            <img className={styles.icon} alt="YouTube" src="/vector19.svg" />
+          </a>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
