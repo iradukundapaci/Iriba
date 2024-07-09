@@ -33,63 +33,31 @@ const OurTeamSection: FunctionComponent<OurTeamSectionType> = ({
           kalisaHonore="MUNEZERO Peter"
           webAppDirector={`Founder & Lead Creative`}
         />
-        <div className={styles.background31Parent}>
-          <img
-            className={styles.background31Icon}
-            alt=""
-            src="/background3-11@2x.png"
-          />
-          <div className={styles.name}>
-            <b className={styles.ngagoUKenny}>Ngago .U Kenny</b>
-            <div
-              className={styles.coFounderLead}
-            >{`Co-Founder & Lead Strategist`}</div>
-          </div>
-        </div>
-        <div className={styles.background31Group}>
-          <img
-            className={styles.background31Icon1}
-            alt=""
-            src="/background3-111@2x.png"
-          />
-          <div className={styles.name1}>
-            <b className={styles.gasanaEddy}>Gasana Eddy</b>
-            <div className={styles.ceo}>{`CEO   `}</div>
-          </div>
-        </div>
-        <div className={styles.background31Container}>
-          <img
-            className={styles.background31Icon2}
-            alt=""
-            src="/background3-12@2x.png"
-          />
-          <div className={styles.name2}>
-            <b className={styles.kalisaHonore}>Kalisa Honore</b>
-            <div className={styles.webAppDirector}>Web/ App Director</div>
-          </div>
-        </div>
-        <div className={styles.frameDiv}>
-          <img
-            className={styles.background31Icon3}
-            alt=""
-            src="/background3-13@2x.png"
-          />
-          <div className={styles.name3}>
-            <b className={styles.elvinMugeni}>Elvin Mugeni</b>
-            <div className={styles.creativeDirector}>CREATIVE DIRECTOR</div>
-          </div>
-        </div>
-        <div className={styles.background31Parent1}>
-          <img
-            className={styles.background31Icon4}
-            alt=""
-            src="/background3-14@2x.png"
-          />
-          <div className={styles.name4}>
-            <b className={styles.paulNPalvis}>Paul N. Palvis</b>
-            <div className={styles.communications}>COMMUNICATIONS</div>
-          </div>
-        </div>
+        <Team
+          background31="/background3-11@2x.png"
+          kalisaHonore="Ngago .U Kenny"
+          webAppDirector={`Co-Founder & Lead Strategist`}
+        />
+        <Team
+          background31="/background3-111@2x.png"
+          kalisaHonore="Gasana Eddy"
+          webAppDirector={`CEO   `}
+        />
+        <Team
+          background31="/background3-12@2x.png"
+          kalisaHonore="Kalisa Honore"
+          webAppDirector={`Web/ App Director`}
+        />
+        <Team
+          background31="/background3-13@2x.png"
+          kalisaHonore="Elvin Mugeni"
+          webAppDirector={`CREATIVE DIRECTOR`}
+        />
+        <Team
+          background31="/background3-14@2x.png"
+          kalisaHonore="Paul N. Palvis"
+          webAppDirector={`COMMUNICATIONS`}
+        />
       </div>
     </div>
   );
