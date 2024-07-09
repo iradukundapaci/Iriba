@@ -196,10 +196,13 @@
   color: var(--color-gray);
   font-family: var(--font-space-grotesk);
 }
+
 @media screen and (max-width: 1200px) {
   .getStartedBtn {
     align-items: center;
     justify-content: center;
+    width: 180px; /* Adjust button width for medium screens */
+    height: 50px; /* Adjust button height for medium screens */
     opacity: 0;
   }
   .getStartedBtn.animate {
@@ -214,6 +217,18 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .getStartedBtn {
+    width: 160px; /* Adjust button width for smaller screens */
+    height: 40px; /* Adjust button height for smaller screens */
+    font-size: var(--font-size-md); /* Adjust font size for smaller screens */
+  }
+  .heroSection {
+    background-position: center;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .pattern7 {
     display: none;
@@ -223,5 +238,16 @@
   }
   .offeringSeamlessEvent {
     font-size: var(--font-size-mini);
+  }
+  .heroSection {
+    padding: var(--padding-xl);
+    background-image: none; /* Remove the background image for small screens */
+  }
+  .getStartedBtn {
+    width: 140px; /* Adjust button width for very small screens */
+    height: 36px; /* Adjust button height for very small screens */
+    font-size: var(
+      --font-size-sm
+    ); /* Adjust font size for very small screens */
   }
 }
