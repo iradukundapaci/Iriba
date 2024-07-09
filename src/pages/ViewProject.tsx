@@ -1,11 +1,21 @@
-import { FunctionComponent } from 'react';
+import React from 'react';
+import { useParams } from 'react-router-dom';
 import TopNavbar from '../components/TopNavbar';
 import Project1 from '../components/Project1';
 import Footer from '../components/Footer';
 import styles from './ViewProject.module.css';
 import TopBar from '../components/TopBar';
 
-const ViewProject: FunctionComponent = () => {
+const ViewProject: React.FC = () => {
+  const { title } = useParams<{ title: string }>();
+
+  // Dynamically create image paths based on the project title
+  const images = [
+    `/public/${title}/image1.jpg`,
+    `/public/${title}/image2.jpg`,
+    `/public/${title}/image3.jpg`,
+  ];
+
   return (
     <div className={styles.viewProject}>
       <TopBar />
@@ -16,7 +26,7 @@ const ViewProject: FunctionComponent = () => {
             <div className={styles.innerContent}>
               <div className={styles.frameParent}>
                 <div className={styles.nvhsWrapper}>
-                  <h1 className={styles.nvhs}>N.V.H.S</h1>
+                  <h1 className={styles.nvhs}>{title}</h1>
                 </div>
                 <div className={styles.courselNav}>
                   <div className={styles.cNav3} />
@@ -25,7 +35,7 @@ const ViewProject: FunctionComponent = () => {
                 </div>
               </div>
             </div>
-            <Project1 />
+            <Project1 images={images} />
           </div>
         </section>
       </main>

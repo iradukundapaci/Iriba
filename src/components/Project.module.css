@@ -7,22 +7,18 @@
   max-height: 100%;
   object-fit: cover;
 }
-.nuVisionHighSchool {
+.portfolioTitle {
   position: relative;
 }
-.brilliantlyRepresentedTheir,
-.internationalSchoolDistincti,
-.usingOurPublishing,
-.weCreatedA,
-.whileRepresentingThe {
+
+.portfolioTask {
   margin: 0;
-}
-.weCreatedAContainer {
   position: relative;
   font-size: var(--font-size-xs);
   color: var(--white);
   text-align: center;
 }
+
 .project,
 .projectDetail {
   display: flex;

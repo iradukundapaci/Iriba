@@ -1,33 +1,27 @@
-import { FunctionComponent } from "react";
-import styles from "./Project1.module.css";
+import { FunctionComponent } from 'react';
+import styles from './Project1.module.css';
 
 export type Project1Type = {
   className?: string;
+  images: string[];
 };
 
-const Project1: FunctionComponent<Project1Type> = ({ className = "" }) => {
+const Project1: FunctionComponent<Project1Type> = ({
+  className = '',
+  images,
+}) => {
   return (
-    <div className={[styles.project, className].join(" ")}>
-      <div className={styles.covers01Wrapper}>
-        <img
-          className={styles.covers01Icon}
-          loading="lazy"
-          alt=""
-          src="/covers01@2x.png"
-        />
-      </div>
-      <img
-        className={styles.covers02Icon}
-        loading="lazy"
-        alt=""
-        src="/covers02@2x.png"
-      />
-      <img
-        className={styles.nuInsightMagazineIcon}
-        loading="lazy"
-        alt=""
-        src="/nuinsight-magazine@2x.png"
-      />
+    <div className={[styles.project, className].join(' ')}>
+      {images.map((src, index) => (
+        <div key={index} className={styles.imageWrapper}>
+          <img
+            className={styles.covers02Icon}
+            loading="lazy"
+            alt={`Project Image ${index + 1}`}
+            src={src}
+          />
+        </div>
+      ))}
     </div>
   );
 };

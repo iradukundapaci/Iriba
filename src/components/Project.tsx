@@ -1,17 +1,28 @@
-import { FunctionComponent } from "react";
-import styles from "./Project.module.css";
+import { FunctionComponent } from 'react';
+import styles from './Project.module.css';
+import { Link } from 'react-router-dom';
 
 export type ProjectType = {
   className?: string;
   rectangle205?: string;
+  task?: string;
+  title?: string;
+  link?: string;
 };
 
 const Project: FunctionComponent<ProjectType> = ({
-  className = "",
+  className = '',
   rectangle205,
+  task,
+  title,
+  link,
 }) => {
   return (
-    <div className={[styles.project, className].join(" ")}>
+    <Link
+      to={`/portfolio/${link}`}
+      className={[styles.project, className].join(' ')}
+      style={{ textDecoration: 'none' }}
+    >
       <img
         className={styles.projectImagesIcon}
         loading="lazy"
@@ -19,26 +30,12 @@ const Project: FunctionComponent<ProjectType> = ({
         src={rectangle205}
       />
       <div className={styles.projectDetail}>
-        <b className={styles.nuVisionHighSchool}>NU-VISION HIGH SCHOOL</b>
+        <b className={styles.portfolioTitle}>{title}</b>
         <div className={styles.weCreatedAContainer}>
-          <p className={styles.weCreatedA}>
-            We created a colourful and engaging school magazine
-          </p>
-          <p className={styles.usingOurPublishing}>
-            using our publishing and layout design skills that
-          </p>
-          <p className={styles.brilliantlyRepresentedTheir}>
-            brilliantly represented their academic experience
-          </p>
-          <p className={styles.whileRepresentingThe}>
-            while representing the essence of their Cambridge
-          </p>
-          <p className={styles.internationalSchoolDistincti}>
-            International School distinction.
-          </p>
+          <p className={styles.portfolioTask}>{task}</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

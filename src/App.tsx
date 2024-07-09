@@ -8,7 +8,7 @@ import {
 import ContactUs from './pages/ContactUs';
 import IribaHome from './pages/IribaHome';
 import Portfolio from './pages/Portfolio';
-import ViewProject from './pages/ViewProject';
+import ViewProject from './pages/ViewProject'; // Update the import here
 import AboutUs from './pages/AboutUs';
 
 function App() {
@@ -72,9 +72,10 @@ function App() {
       <Route path="/" element={<IribaHome />} />
       <Route path="/contact-us" element={<ContactUs />} />
       <Route path="/portfolio" element={<Portfolio />} />
-      <Route path="/viewproject" element={<ViewProject />} />
+      <Route path="/portfolio/:title" element={<ViewProject />} />
       <Route path="/about-us" element={<AboutUs />} />
     </Routes>
   );
 }
+
 export default App;
