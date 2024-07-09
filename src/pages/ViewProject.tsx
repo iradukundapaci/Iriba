@@ -11,9 +11,9 @@ const ViewProject: React.FC = () => {
 
   // Dynamically create image paths based on the project title
   const images = [
-    `/public/${title}/image1.jpg`,
-    `/public/${title}/image2.jpg`,
-    `/public/${title}/image3.jpg`,
+    `/${title}/image1.jpg`,
+    `/${title}/image2.jpg`,
+    `/${title}/image3.jpg`,
   ];
 
   return (
