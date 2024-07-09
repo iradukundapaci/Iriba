@@ -180,8 +180,11 @@
   gap: var(--gap-8xs);
 }
 .heroSection {
+  align-self: stretch;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   padding: var(--padding-61xl) 0 var(--padding-21xl) var(--padding-21xl);
   gap: var(--gap-41xl);
   background-image: url(/herosection@3x.png);
