@@ -2,6 +2,7 @@ import { FunctionComponent, useMemo, type CSSProperties } from "react";
 import { Button } from "@mui/material";
 import WhoWeAreTitle from "./WhoWeAreTitle";
 import styles from "./WhoWeAreSection.module.css";
+import { Link } from "react-router-dom";
 
 export type WhoWeAreSectionType = {
   className?: string;
@@ -27,7 +28,7 @@ const WhoWeAreSection: FunctionComponent<WhoWeAreSectionType> = ({
 
   return (
     <div
-      className={[styles.whoWeAreSection, className].join(" ")}
+      className={[styles.whoWeAreSection, className].join(' ')}
       style={whoWeAreSectionStyle}
     >
       <img className={styles.whoWeAreSectionChild} alt="" src={rectangle206} />
@@ -41,16 +42,18 @@ const WhoWeAreSection: FunctionComponent<WhoWeAreSectionType> = ({
           every brand has a unique story to tell, and we work tirelessly to
           ensure that story reaches the right audience at the right time.
         </div>
-        <Button
-          className={styles.contactUsBtn}
-          disableElevation
-          color="primary"
-          variant="contained"
-          href="/contact-us"
-          sx={{ borderRadius: "0px 0px 0px 0px", width: 197, height: 53 }}
-        >
-          Contact us
-        </Button>
+        <Link className={styles.aboutUs} to="/contact-us">
+          <Button
+            className={styles.contactUsBtn}
+            disableElevation
+            color="primary"
+            variant="contained"
+            href="/contact-us"
+            sx={{ borderRadius: '0px 0px 0px 0px', width: 197, height: 53 }}
+          >
+            Contact us
+          </Button>
+        </Link>
       </div>
     </div>
   );
