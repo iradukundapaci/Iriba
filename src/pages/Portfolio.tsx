@@ -34,7 +34,7 @@ the best views to potential customers."
           <Project
             rectangle205="/rectangle-2052@2x.png"
             title="KHWEZI ALLIANCE"
-            link="KHA"
+            link="KHWEZI"
             task="We collaborated with @khwezialliance through branding to
 create a marvelous experience for the New Brunswick youth
 at the Khwezi Experience event, an amazing opportunity for
@@ -62,6 +62,22 @@ the user experience and renewed the brand with credibility."
             rectangle205="/rectangle-2055@2x.png"
             title="GLOBE EDUCATION CONSULT"
             link="GEC"
+            task="We transformed Globe Education Consult into a light of opportunities by distinguishing their offices. Our creative abilities helped
+them broaden their global reach by creating appealing social media
+posts that echoed their vision."
+          />
+          <Project
+            rectangle205="/Inzozi.jpg"
+            title="INZOZI"
+            link="INZOZI"
+            task="We transformed Globe Education Consult into a light of opportunities by distinguishing their offices. Our creative abilities helped
+them broaden their global reach by creating appealing social media
+posts that echoed their vision."
+          />
+          <Project
+            rectangle205="/Goshen.jpg"
+            title="GOSHEN"
+            link="GOSHEN"
             task="We transformed Globe Education Consult into a light of opportunities by distinguishing their offices. Our creative abilities helped
 them broaden their global reach by creating appealing social media
 posts that echoed their vision."

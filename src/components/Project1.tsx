@@ -14,12 +14,7 @@ const Project1: FunctionComponent<Project1Type> = ({
     <div className={[styles.project, className].join(' ')}>
       {images.map((src, index) => (
         <div key={index} className={styles.imageWrapper}>
-          <img
-            className={styles.covers02Icon}
-            loading="lazy"
-            alt={`Project Image ${index + 1}`}
-            src={src}
-          />
+          <img className={styles.covers02Icon} loading="lazy" src={src} />
         </div>
       ))}
     </div>

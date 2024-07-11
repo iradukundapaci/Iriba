@@ -14,6 +14,13 @@ const ViewProject: React.FC = () => {
     `/${title}/image1.jpg`,
     `/${title}/image2.jpg`,
     `/${title}/image3.jpg`,
+    `/${title}/image4.jpg`,
+    `/${title}/image5.jpg`,
+    `/${title}/image6.jpg`,
+    `/${title}/image7.jpg`,
+    `/${title}/image8.jpg`,
+    `/${title}/image9.jpg`,
+    `/${title}/image10.jpg`,
   ];
 
   return (

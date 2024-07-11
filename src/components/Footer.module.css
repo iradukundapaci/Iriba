@@ -93,6 +93,14 @@
     padding: 0 40px;
   }
 
+  .footerNavigation {
+    display: none;
+  }
+
+  .companyInfo {
+    margin-bottom: 10px;
+  }
+
   .footerNavigation,
   .emailSubscription {
     margin-bottom: var(--gap-21xl);
@@ -103,6 +111,14 @@
   .upperFooter,
   .lowerFooter {
     padding: 0 20px;
+  }
+
+  .footerNavigation {
+    display: none;
+  }
+
+  .companyInfo {
+    margin-bottom: 10px;
   }
 
   .footer {

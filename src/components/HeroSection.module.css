@@ -241,7 +241,8 @@
   }
   .heroSection {
     padding: var(--padding-xl);
-    background-image: none; /* Remove the background image for small screens */
+    background-image: none;
+    margin-top: 120px; /* Remove the background image for small screens */
   }
   .getStartedBtn {
     width: 140px; /* Adjust button width for very small screens */
