@@ -1,22 +1,22 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent } from 'react';
 import {
   TextField,
   InputAdornment,
   Icon,
   IconButton,
   Button,
-} from "@mui/material";
-import styles from "./Subscription.module.css";
+} from '@mui/material';
+import styles from './Subscription.module.css';
 
 export type SubscriptionType = {
   className?: string;
 };
 
 const Subscription: FunctionComponent<SubscriptionType> = ({
-  className = "",
+  className = '',
 }) => {
   return (
-    <div className={[styles.subscription, className].join(" ")}>
+    <div className={[styles.subscription, className].join(' ')}>
       <div className={styles.linePattern3}>
         <div className={styles.frame}>
           <img className={styles.frameIcon} alt="" src="/frame.svg" />
@@ -70,14 +70,14 @@ const Subscription: FunctionComponent<SubscriptionType> = ({
           label="Enter Your Email Address"
           required={true}
           variant="outlined"
-          sx={{ "& .MuiInputBase-root": { height: "40px" }, width: "270px" }}
+          sx={{ '& .MuiInputBase-root': { height: '50px' }, width: '270px' }}
         />
         <Button
           className={styles.subscriptionBtn}
           disableElevation
           color="primary"
           variant="contained"
-          sx={{ borderRadius: "0px 0px 0px 0px", width: 270, height: 40 }}
+          sx={{ borderRadius: '0px 0px 0px 0px', width: 270, height: 50 }}
         >
           Subcribe Now
         </Button>

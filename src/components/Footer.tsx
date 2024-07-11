@@ -48,6 +48,7 @@ const Footer: FunctionComponent<FooterType> = ({ className = '' }) => {
           <div className={styles.subscriptionForm}>
             <TextField
               variant="outlined"
+              color="secondary"
               placeholder="Enter your email address"
               InputProps={{
                 endAdornment: (
@@ -57,6 +58,22 @@ const Footer: FunctionComponent<FooterType> = ({ className = '' }) => {
                     </IconButton>
                   </InputAdornment>
                 ),
+              }}
+              sx={{
+                '& .MuiOutlinedInput-root': {
+                  '& fieldset': {
+                    borderColor: 'var(--color-darkgray-100)',
+                  },
+                  '&:hover fieldset': {
+                    borderColor: 'var(--color-darkgray-100)',
+                  },
+                  '&.Mui-focused fieldset': {
+                    borderColor: 'var(--color-darkgray-100)',
+                  },
+                },
+                '& .MuiInputBase-input': {
+                  color: 'var(--color-darkgray-100)',
+                },
               }}
             />
           </div>

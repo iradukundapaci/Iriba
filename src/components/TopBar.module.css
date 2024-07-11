@@ -21,7 +21,7 @@
   background-color: var(--color-sienna-100);
 }
 .topBar {
-  height: 10px;
+  height: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;

@@ -1,5 +1,5 @@
 import React, { FunctionComponent, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './TopNavbar.module.css';
 
 export type TopNavbarType = {
@@ -19,41 +19,84 @@ const TopNavbar: FunctionComponent<TopNavbarType> = ({ className = '' }) => {
         <img className={styles.vectorIcon} alt="" src="/vector.svg" />
       </div>
       <div className={styles.navBarBig}>
-        <Link className={styles.aboutUs} to="/">
+        <NavLink
+          className={({ isActive }) =>
+            `${styles.navLink} ${isActive ? styles.active : ''}`
+          }
+          to="/"
+        >
           Home
-        </Link>
-        <Link className={styles.aboutUs} to="/about-us">
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            `${styles.navLink} ${isActive ? styles.active : ''}`
+          }
+          to="/about-us"
+        >
           About us
-        </Link>
-        <Link className={styles.portfolio} to="/portfolio">
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            `${styles.navLink} ${isActive ? styles.active : ''}`
+          }
+          to="/portfolio"
+        >
           Portfolio
-        </Link>
-        <a className={styles.blog} href="https://iribacreatives.blogspot.com/">
-          Blog
-        </a>
-        <Link className={styles.contactUs} to="/contact-us">
-          Contact us
-        </Link>
-      </div>
-      <div className={`${styles.navBar} ${isMenuOpen ? styles.open : ''}`}>
-        <Link className={styles.navLink} to="/">
-          Home
-        </Link>
-        <Link className={styles.navLink} to="/about-us">
-          About us
-        </Link>
-        <Link className={styles.navLink} to="/portfolio">
-          Portfolio
-        </Link>
+        </NavLink>
         <a
           className={styles.navLink}
           href="https://iribacreatives.blogspot.com/"
         >
           Blog
         </a>
-        <Link className={styles.navLink} to="/contact-us">
+        <NavLink
+          className={({ isActive }) =>
+            `${styles.navLink} ${isActive ? styles.active : ''}`
+          }
+          to="/contact-us"
+        >
           Contact us
-        </Link>
+        </NavLink>
+      </div>
+      <div className={`${styles.navBar} ${isMenuOpen ? styles.open : ''}`}>
+        <NavLink
+          className={({ isActive }) =>
+            `${styles.navLink} ${isActive ? styles.active : ''}`
+          }
+          to="/"
+        >
+          Home
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            `${styles.navLink} ${isActive ? styles.active : ''}`
+          }
+          to="/about-us"
+        >
+          About us
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            `${styles.navLink} ${isActive ? styles.active : ''}`
+          }
+          to="/portfolio"
+        >
+          Portfolio
+        </NavLink>
+        <a
+          className={styles.navLink}
+          href="https://iribacreatives.blogspot.com/"
+        >
+          Blog
+        </a>
+        <NavLink
+          className={({ isActive }) =>
+            `${styles.navLink} ${isActive ? styles.active : ''}`
+          }
+          to="/contact-us"
+        >
+          Contact us
+        </NavLink>
       </div>
       <button className={styles.blackMenu1} onClick={toggleMenu} />
       {isMenuOpen && <div className={styles.overlay} onClick={toggleMenu} />}
