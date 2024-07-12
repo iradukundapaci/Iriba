@@ -79,6 +79,13 @@
     box-sizing: border-box;
   }
 }
+
+@media screen and (max-width: 960px) {
+  .contactUsSection {
+    padding-top: 170px;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .projectShowcase {
     padding-left: var(--padding-3xl);

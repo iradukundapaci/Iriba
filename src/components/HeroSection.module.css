@@ -252,3 +252,9 @@
     ); /* Adjust font size for very small screens */
   }
 }
+
+@media screen and (max-width: 960px) {
+  .heroSection {
+    padding-top: 170px;
+  }
+}

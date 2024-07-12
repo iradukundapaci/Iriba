@@ -106,3 +106,9 @@
     box-sizing: border-box;
   }
 }
+
+@media screen and (max-width: 960px) {
+  .mapWrapper {
+    padding-top: 150px;
+  }
+}

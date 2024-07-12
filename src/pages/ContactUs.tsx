@@ -1,15 +1,13 @@
 import { FunctionComponent } from 'react';
-import TopNavbar from '../components/TopNavbar';
 import TeamContent from '../components/TeamContent';
 import Footer from '../components/Footer';
 import styles from './ContactUs.module.css';
-import TopBar from '../components/TopBar';
+import Top from '../components/Top';
 
 const ContactUs: FunctionComponent = () => {
   return (
     <div className={styles.contactUs}>
-      <TopBar />
-      <TopNavbar />
+      <Top />
       <section className={styles.mapWrapper}>
         <iframe
           className={styles.map}

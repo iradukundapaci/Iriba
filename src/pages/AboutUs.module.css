@@ -33,3 +33,9 @@
   align-items: flex-start;
   mix-blend-mode: normal;
 }
+
+@media screen and (max-width: 960px) {
+  .paddingContainer {
+    padding-top: 170px;
+  }
+}

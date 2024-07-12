@@ -9,32 +9,32 @@ import TopBar from '../components/TopBar';
 const ViewProject: React.FC = () => {
   const { title } = useParams<{ title: string }>();
 
-  // Dynamically create image paths based on the project title
-  const images = [
-    `/${title}/image1.jpg`,
-    `/${title}/image2.jpg`,
-    `/${title}/image3.jpg`,
-    `/${title}/image4.jpg`,
-    `/${title}/image5.jpg`,
-    `/${title}/image6.jpg`,
-    `/${title}/image7.jpg`,
-    `/${title}/image8.jpg`,
-    `/${title}/image9.jpg`,
-    `/${title}/image10.jpg`,
-  ];
+  if (!title) {
+    return <div>Invalid project title or number of images.</div>;
+  }
+
+  const [titles, numberOfImagesStr] = title.split('-');
+  const numberOfImages = parseInt(numberOfImagesStr, 10);
+
+  if (isNaN(numberOfImages) || numberOfImages <= 0) {
+    return <div>Invalid number of images.</div>;
+  }
+
+  const images: string[] = [];
+  for (let i = 1; i <= numberOfImages; i++) {
+    images.push(`/${titles}/image${i}.jpg`);
+  }
 
   return (
     <div className={styles.viewProject}>
       <TopBar />
+      <TopNavbar />
       <main className={styles.mainContent}>
-        <TopNavbar />
         <section className={styles.body}>
           <div className={styles.contentWrapper}>
             <div className={styles.innerContent}>
               <div className={styles.frameParent}>
-                <div className={styles.nvhsWrapper}>
-                  <h1 className={styles.nvhs}>{title}</h1>
-                </div>
+                <h1 className={styles.nvhs}>{titles}</h1>
                 <div className={styles.courselNav}>
                   <div className={styles.cNav3} />
                   <div className={styles.cNav2} />

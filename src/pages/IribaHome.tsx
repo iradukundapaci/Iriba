@@ -1,6 +1,4 @@
 import { FunctionComponent } from 'react';
-import TopBar from '../components/TopBar';
-import TopNavbar from '../components/TopNavbar';
 import HeroSection from '../components/HeroSection';
 import ServicesSection from '../components/ServicesSection';
 import WhoWeAreSection from '../components/WhoWeAreSection';
@@ -10,12 +8,12 @@ import Posts from '../components/Posts';
 import Subscription from '../components/Subscription';
 import Footer from '../components/Footer';
 import styles from './IribaHome.module.css';
+import Top from '../components/Top';
 
 const IribaHome: FunctionComponent = () => {
   return (
     <div className={styles.iribaHome}>
-      <TopBar />
-      <TopNavbar />
+      <Top />
       <HeroSection />
       <ServicesSection />
       <WhoWeAreSection rectangle206="/rectangle-206@2x.png" />

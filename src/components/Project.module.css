@@ -6,6 +6,8 @@
   overflow: hidden;
   max-height: 100%;
   object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 .portfolioTitle {
   position: relative;
@@ -33,21 +35,25 @@
   gap: var(--gap-lgi);
 }
 .project {
-  height: 572px;
-  width: 572px;
+  height: auto; /* Allow the height to adjust */
+  width: 100%; /* Make the width 100% of the container */
   border: 1px solid var(--color-darkgray-100);
   box-sizing: border-box;
   align-items: flex-start;
   justify-content: flex-start;
-  min-width: 543px;
-  max-width: 100%;
   text-align: left;
   font-size: var(--font-size-lg);
   color: var(--color-sienna-100);
   font-family: var(--font-space-grotesk);
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 750px) {
   .project {
     min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .projectImagesIcon {
+    min-width: 100%; /* Ensure the image takes the full width on very small screens */
   }
 }
