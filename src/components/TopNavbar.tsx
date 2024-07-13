@@ -103,7 +103,7 @@ const TopNavbar: FunctionComponent<TopNavbarType> = ({ className = '' }) => {
       <div className={styles.socialHeader}>
         <div className={styles.stayConnected}>Stay Connected</div>
         <div className={styles.socialMediaIconsHeader}>
-          <a target="_blank" href="https://www.instagram.com/iribacreatives/" t>
+          <a target="_blank" href="https://www.instagram.com/iribacreatives/">
             <img className={styles.vectorIcon1} alt="" src="/vector1.svg" />
           </a>
           <a target="_blank" href="https://www.facebook.com/iribacreatives">
