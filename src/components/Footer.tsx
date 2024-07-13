@@ -85,27 +85,34 @@ const Footer: FunctionComponent<FooterType> = ({ className = '' }) => {
         </p>
         <div className={styles.footerIcons}>
           <a
+            target="_blank"
             href="https://www.facebook.com/iribacreatives"
             aria-label="Facebook"
           >
             <img className={styles.icon} alt="Facebook" src="/vector15.svg" />
           </a>
-          <a href="https://x.com/iribacreatives" aria-label="Twitter">
+          <a
+            target="_blank"
+            href="https://x.com/iribacreatives"
+            aria-label="Twitter"
+          >
             <img className={styles.icon} alt="Twitter" src="/vector16.svg" />
           </a>
           <a
+            target="_blank"
             href="https://www.linkedin.com/company/86700196/admin/dashboard/"
             aria-label="LinkedIn"
           >
             <img className={styles.icon} alt="LinkedIn" src="/vector17.svg" />
           </a>
           <a
+            target="_blank"
             href="https://www.instagram.com/iribacreatives/"
             aria-label="Instagram"
           >
             <img className={styles.icon} alt="Instagram" src="/vector18.svg" />
           </a>
-          <a href="#" aria-label="YouTube">
+          <a target="_blank" href="#" aria-label="YouTube">
             <img className={styles.icon} alt="YouTube" src="/vector19.svg" />
           </a>
         </div>
