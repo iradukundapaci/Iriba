@@ -33,10 +33,12 @@
   justify-content: center;
   padding: var(--padding-3xl) var(--padding-xl);
   gap: var(--gap-lgi);
+  min-height: 140px;
 }
 .project {
   height: auto; /* Allow the height to adjust */
   width: 100%; /* Make the width 100% of the container */
+  max-width: 700px;
   border: 1px solid var(--color-darkgray-100);
   box-sizing: border-box;
   align-items: flex-start;
