@@ -1,11 +1,9 @@
 .background31Icon {
-  align-self: stretch;
-  position: relative;
   max-width: 100%;
   overflow: hidden;
-  height: 316px;
+  height: auto; /* Ensure the image keeps its aspect ratio */
   flex-shrink: 0;
-  object-fit: cover;
+  object-fit: contain;
 }
 .founderLead,
 .munezeroPeter {
@@ -22,10 +20,10 @@
   align-items: flex-start;
   max-width: 100%;
   height: auto;
-  display: block;
   margin: 0 auto;
 }
 .name {
+  width: 100%;
   align-self: stretch;
   background-color: var(--color-black);
   justify-content: center;
@@ -35,6 +33,7 @@
   width: 255px;
   justify-content: flex-start;
   gap: var(--gap-8xs);
+  padding: var(--gap-4xs) 0; /* Add padding to create space */
   text-align: left;
   font-size: var(--font-size-lg);
   color: var(--white);

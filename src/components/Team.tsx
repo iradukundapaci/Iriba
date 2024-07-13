@@ -1,5 +1,5 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
-import styles from "./Team.module.css";
+import { FunctionComponent, useMemo, type CSSProperties } from 'react';
+import styles from './Team.module.css';
 
 export type TeamType = {
   className?: string;
@@ -8,11 +8,11 @@ export type TeamType = {
   webAppDirector?: string;
 
   /** Style props */
-  propHeight?: CSSProperties["height"];
+  propHeight?: CSSProperties['height'];
 };
 
 const Team: FunctionComponent<TeamType> = ({
-  className = "",
+  className = '',
   background31,
   kalisaHonore,
   webAppDirector,
@@ -26,7 +26,7 @@ const Team: FunctionComponent<TeamType> = ({
 
   return (
     <div
-      className={[styles.background31Parent, className].join(" ")}
+      className={[styles.background31Parent, className].join(' ')}
       style={frameDivStyle}
     >
       <img className={styles.background31Icon} alt="" src={background31} />

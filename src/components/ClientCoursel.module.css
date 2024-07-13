@@ -1,0 +1,125 @@
+.cascadeIcon,
+.harambeIcon,
+.khweziIcon,
+.quickHomesIcon {
+  width: 238px;
+  position: relative;
+  height: 57px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.cascadeIcon,
+.khweziIcon,
+.quickHomesIcon {
+  width: 175px;
+  height: 77px;
+}
+.cascadeIcon,
+.quickHomesIcon {
+  width: 196px;
+  height: 65px;
+}
+.quickHomesIcon {
+  width: 175px;
+  height: 77px;
+}
+.groupIcon,
+.groupIcon1 {
+  width: 157px;
+  position: relative;
+  height: 45.6px;
+}
+.groupIcon1 {
+  width: 99px;
+  height: 11.3px;
+}
+.harambeParent,
+.nara {
+  display: flex;
+  align-items: center;
+}
+.nara {
+  width: 157px;
+  height: 65px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.slider-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.clientIcon {
+  width: 100%;
+  height: auto;
+  max-width: 200px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: '';
+}
+
+.slick-dots li button:before {
+  color: #000; /* Change to your preferred color */
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #000; /* Change to your preferred color */
+}
+@media screen and (max-width: 450px) {
+  .harambeIcon,
+  .khweziIcon {
+    width: 222px;
+    height: 53px;
+    margin-bottom: 10;
+  }
+  .khweziIcon {
+    width: 172px;
+    height: 76px;
+  }
+  .cascadeIcon,
+  .quickHomesIcon {
+    width: 172px;
+    height: 57px;
+    margin-bottom: 10;
+  }
+  .groupIcon {
+    width: 121px;
+    height: 35px;
+  }
+  .groupIcon1 {
+    width: 179px;
+    height: 20px;
+  }
+  .harambeParent,
+  .nara {
+    width: auto;
+    align-self: unset;
+    height: auto;
+  }
+  .harambeParent {
+    align-self: stretch;
+    flex-direction: column;
+  }
+  .atIribaCreatives {
+    text-align: center;
+  }
+  .ourClients {
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+}
